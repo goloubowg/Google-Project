@@ -1,0 +1,184 @@
+/** selects all things on page-sketch ass button*/
+*{
+  color:#000;
+  /*all elements are black*/
+}
+body{
+  background:none repeat scroll 0 0 #fff;
+  /*changes text color to light black*/
+  color:#222;
+  /*set default margin to 0 all browser has different default*/
+  margin:0;
+}
+a{
+  /*change color to light blackis*/
+  color:#222;
+  /*remove underline*/
+  text-decoration: none;
+
+}
+/*selects all anchor tags when something is hoverin on it*/
+a:hover{
+  text-decoration: none;
+  }
+/*TOP SECTION NAVIGATION*/
+/*selects all elements with class top navigation*/
+.top-navigation{
+  /*Float changes the words from left side to right side*/
+  float: right;
+  margin-right: 25px;
+
+}
+/*selects any elements with a class of top navigation and any li tages inside the elements*/
+.top-navigation li {
+  list-style: none;
+  /*changes the top navigation from vertical formationt to horizonatl*/
+  display: inline-block;
+  text-align: right;
+  /*adds space between border/content top right bottom left*/
+  padding: 5px 10px 0 0;
+  vertical-align: bottom;
+  /*adds more space from block and everything else*/
+  margin: 5px 5px 0 0;
+  font-size: 13px;
+  }
+/*???? selects all the font awesome standard class in all of index file*/
+.fa{
+  font-size:20px;
+  vertical-align: top;
+  opacity: 0.7;
+  cursor: default;
+}
+.fa:hover{
+  opacity: 1.0;
+}
+.share-button{
+  background-color: #f2f2f2;
+  padding: 7px 15px;
+  cursor: default;
+  /*idk what this does ^*/
+  position: relative;
+  top:-3px;
+  }
+.share-button:hover{
+    background-color: #E1E1E1;
+    }
+.profile-img{
+      border-radius: 25px;
+      height: 32px;
+      width: 32px;
+      position: relative;
+      top: 5px;
+    }
+/*Middle section Search Bar */
+/*selects everything with class of search box*/
+.search-box{
+  /*???*/
+  position: absolute;
+  margin-top: 75px;
+  width: 100%;
+}
+/*search box elemetns and then images*/
+.search-box img{
+  padding: 142px 0 24px 0;
+  display: block;
+  /*Centers the image*/
+  margin:0 auto;
+}
+/*selects search box and then input*/
+.search-box input {
+    width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+
+}
+/*selects any elements with a class of search box and then find any input tags that are focused ??*/
+.search-box input:focus{
+  border-color: #f5f5f5;
+}
+.search-buttons{
+  text-align: center;
+  padding-left: 0;
+}
+/*button tag from search buttons*/
+.search-buttons button{
+  background-color: #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  color: #666;
+  /*font in the button changes*/
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 27px;
+  /*seperates the buttons*/
+  margin: 17px 6px;
+  padding: 0 12px;
+  /*makes all buttons in the same block line*/
+  display: inline-block;
+  /*idk*/
+  cursor: pointer;
+
+}
+/*select any elements with a class of search-buttons and find all button tags inside that are hovered on*/
+.search-buttons button:hover{
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/*bottom section links*/
+.bottom-site-links{
+  /*important makes this apex command overrides everything else*/
+  bottom: 0 !important;
+  /*???absolute idk*/
+  position: absolute;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+}
+/*these select both right side and left side links comma makes that happen*/
+
+.left-side-links, .right-side-links{
+  /*makes all the links really close to each other staccked*/
+
+  margin: 0;
+}
+.left-side-links{
+  /*makes left side links the most left */
+  float: left;
+  padding-left: 20px;
+}
+.right-side-links{
+  /*makes right links all to the right*/
+  float: right;
+  padding-right: 10px;
+}
+.left-side-links li,
+ .right-side-links li {
+  /*gets rid of the bullet points next to it*/
+  list-style: none;
+  display: inline;
+  /*pads the words from the borders*/
+  line-height: 40px;
+}
+/*idk what this points to*/
+.right-side-links li a:first-child{
+  padding-right: 8px;
+}
+/*picks the buttom links with tag li and 2,3 a tag*/
+.left-side-links li:nth-child(2), .left-side-links li:nth-child(3){
+  margin-left: 7px;
+
+}
+.left-side-links li a,
+ .right-side-links li a {
+   color: #666;
+   margin: 2px 10px 0;
+   letter-spacing: 0.1px;
+   font-size: 14px;
+}
